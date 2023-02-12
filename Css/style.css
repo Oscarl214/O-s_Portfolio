@@ -62,20 +62,47 @@ main{
     padding-top: var(--mainpadding);
 }
 
-
-
-
-
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
 #sidebar{
-    background: lightsalmon;
     grid-area: sidebar;
     border-radius: var(--main-radius);
     padding-top: var(--mainpadding);
+    background: beige;
+    color:#002349;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
+pre{
+    background: #002349;
+    color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+    /* border-radius: 15px; */
+}
+
+#gym{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+#code{
+    height: 800px;
+    width:300px;
+}
 #work{
     background: lightsalmon;
     grid-area: work;
