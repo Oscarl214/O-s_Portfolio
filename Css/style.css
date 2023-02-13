@@ -1,41 +1,47 @@
-:root{
+/* MY VARIABLES */
+:root{ 
     --mainRadius:5px;
     --mainpadding:5px;
+    --maincolor:#002349;
+    --secondcolor: bisque;
 }
 
 body{
-    background: #002349;
-    color:bisque;
+    background: var(--maincolor);
+    color:var(--secondcolor);
     font-family: 'Playfair Display', serif';
 }
 
-.container{
+/* MY GRID CONTAINER WHERE I DEFINED HOW MANY ROLES AND COLUMNS I NEED TO CREATE THE LOOK OF MY MOCK WIREFRAME*/
+.container{ 
     display:grid;
     height:100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr auto auto 0.8fr; 
-    grid-template-areas: 
-        "nav nav nav"
-        "main main main"
-        "work-1 work-2 work-3"
-        "footer footer footer"
+    grid-template-columns: 1fr ; /* One COLUMN SIZE "1 FRACTION" */
+    grid-template-rows: 0.2fr auto auto auto auto auto 0.8fr; /*FIVE ROWS WITH ONLY NAV AND FOOTER HAVING SPECIFIC SIZES*/
+    grid-template-areas: /* LAYOUT OF MY ENTIRE WEBSITE COVERING EACH AREA OVER ONE COLUMN AND A TOTAL OF 7 ROWS*/
+        "nav"
+        "main"
+        "work"
+        "work-1"
+        "work-2"
+        "work-3"
+        "footer"
     ;
-    grid-gap:0.2rem;
+    grid-gap:0.2rem; /*SPACE BETWEEN MY ROWS AND COLUMNS*/
 }
-
+/*THESE CLASS SELECTORS AFFECT MY NAV AND ITS COMPONENTS*/
 nav{
-    /* background: aqua; */
     border-bottom: solid;
-    grid-area: nav;
+    grid-area: nav; /*SPECIFIED THE NAME OF MY GRID AREA ON THE DEDICATED HTML ELEMENT SO GRID CAN RECOGNIZE THIS SPACE GOES IN SUCH AREA*/
     border-radius: var(--main-radius);
     padding-top: var(--mainpadding);
  
 }
-
 h1{
     display:flex;
     justify-content: center;
     width: 100%;
+    font-size:25px;
 }
 .menu{
     display:flex;
@@ -47,87 +53,31 @@ h1{
     justify-content: space-between;
     margin: 20px;
     margin-bottom: 0px;
-    border-bottom: bisque;
+    border-bottom: var(--secondcolor);
 }
 
 .menu a{
-    color: beige;
+    color: var(--secondcolor);
     text-decoration: none;
 }
+
+
+/*THESE CLASS SELECTORS AFFECT MY MAIN "ABOUT ME" SECTION AND ITS COMPONENTS*/
 main{
-    grid-area: main;
+    grid-area: main; /*SPECIFIED THE NAME OF MY GRID AREA ON THE DEDICATED HTML ELEMENT SO GRID CAN RECOGNIZE THIS SPACE GOES IN SUCH AREA*/
     border-radius: var(--main-radius);
     padding-top: var(--mainpadding);
+    border-bottom: solid;
+
 }
 
-h2{
+h2{ 
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-pre{
-    background: #002349;
-    color: beige;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Space Mono', monospace;
-    /* border-radius: 15px; */
-}
-
-#gym{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 100%;
-}
-#code{
-    height: 800px;
-    width:300px;
-}
-
-#gradshot{
-    height: 600px;
-    width: 500px;;
-}
-
-
-#work-1{
-    background: lightgreen;
-    grid-area:work-1;
-    border-radius: var(--main-radius);
-    padding-top: var(--mainpadding);
-}
-
-#aboutme{
-    line-height: 1.6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-#work-2{
-    background: lightgray;
-    grid-area: work-2;
-    border-radius: var(--main-radius);
-    padding-top: var(--mainpadding);
-}
-
-#work-3{
-    background: lime;
-    grid-area:work-3;
-    border-radius: var(main-radius);
-    padding-top: var(--mainpadding);
-}
-
-footer{
-    background: red;
-    grid-area: footer;
-    border-radius: var(--main-radius);
-    padding-top: var(--mainpadding);
+    font-size: 20px;
+    margin-bottom: 5px;;
+    text-decoration: underline;
 }
 
 /* ABOUT ME IMAGE & TEXT PROPERTIES */
@@ -141,7 +91,7 @@ footer{
     width: 450px;
 
   }
-  .image {
+  .gradshot {
     flex-basis: 100%
   }
   .text {
@@ -150,20 +100,125 @@ footer{
     line-height: 3rem;
   }
 
+  /*THESE CLASS SELECTORS AFFECT MY WORK SECTION AND ITS COMPONENTS*/
+#work{ 
+    grid-area:work; /*SPECIFIED THE NAME OF MY GRID AREA ON THE DEDICATED HTML ELEMENT SO GRID CAN RECOGNIZE THIS SPACE GOES IN SUCH AREA*/
+    border-radius: var(--main-radius);
+    padding-top: var(--mainpadding);
+}
 
+
+  /*THESE CLASS SELECTORS AFFECT MY WORK-1 SECTION AND ITS COMPONENTS*/
+#work-1{
+    grid-area:work-1; /*SPECIFIED THE NAME OF MY GRID AREA ON THE DEDICATED HTML ELEMENT SO GRID CAN RECOGNIZE THIS SPACE GOES IN SUCH AREA*/
+    border-radius: var(--main-radius);
+    padding-top: var(--mainpadding);
+}
+
+/*RESUME HERE */
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ARimg{
+    object-fit: contain;
+    max-width: 100%;
+
+
+  }
+  .arprojectimg{
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 100%;
+
+  }
+  .text1 {
+    font-size: 20px;
+    line-height: 3rem;
+  }
+
+  ul{
+    list-style: circle;
+  }
+
+  /*THESE CLASS SELECTORS AFFECT MY WORK-2 SECTION AND ITS COMPONENTS*/
+#work-2{
+    background: lightgray;
+    grid-area: work-2; /*SPECIFIED THE NAME OF MY GRID AREA ON THE DEDICATED HTML ELEMENT SO GRID CAN RECOGNIZE THIS SPACE GOES IN SUCH AREA*/
+    border-radius: var(--main-radius);
+    padding-top: var(--mainpadding);
+}
+
+
+  /*THESE CLASS SELECTORS AFFECT MY WORK-3 SECTION AND ITS COMPONENTS*/
+#work-3{
+    background: lime;
+    grid-area:work-3; /*SPECIFIED THE NAME OF MY GRID AREA ON THE DEDICATED HTML ELEMENT SO GRID CAN RECOGNIZE THIS SPACE GOES IN SUCH AREA*/
+    border-radius: var(main-radius);
+    padding-top: var(--mainpadding);
+}
+
+
+  /*THESE CLASS SELECTORS AFFECT MY FOOTER SECTION AND ITS COMPONENTS*/
+footer{
+    background: red;
+    grid-area: footer; /*SPECIFIED THE NAME OF MY GRID AREA ON THE DEDICATED HTML ELEMENT SO GRID CAN RECOGNIZE THIS SPACE GOES IN SUCH AREA*/
+    border-radius: var(--main-radius);
+    padding-top: var(--mainpadding);
+}
+
+
+
+  /*MY MEDIA QUERIES FOR RESPONSIVNESS*/
 @media only screen and (max-width: 550px) {
     .container {
       grid-template-columns: 1fr;
       grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
-      grid-template-areas:
+      grid-template-areas: /*SET MY AREAS TO BE STACKED ON EACH OTHER*/
         "nav"
         "main"
-        /* "sidebar" */
         "work"
         "work-1"
         "work-2"
         "work-3"
         "footer";
     }
+    .container1{
+        display: flex;
+        flex-direction: column; /*HAD MY CONTAINER FOR MY TEXT WRAP TO BE A COLUMN ONCE THE DEVICE VIEW FITS MOBILE VIEW*/
+        align-items: center;
+        justify-content: center;
+    }
+
   }
 
+/* pre{
+    background: #002349;
+    color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+    /* border-radius: 15px; 
+} */
+
+/* #gym{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+} */
+/* #code{
+    height: 800px;
+    width:300px;
+} */
+
+/*
+#aboutme{
+    line-height: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+} */
