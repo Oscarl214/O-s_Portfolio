@@ -30,6 +30,7 @@ body {
   grid-gap: 0.2rem; /*SPACE BETWEEN MY ROWS AND COLUMNS*/
 }
 
+/* THESE CLASS SELECTORS AFFECT MY HEADER AND ITS COMPONENTS */
 .header {
   grid-area: header;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(26, 26, 26, 0.4)),
@@ -129,7 +130,7 @@ img {
   line-height: 3.5rem;
 }
 
-/*THESE CLASS SELECTORS AFFECT MY WORK SECTION AND ITS COMPONENTS*/
+/*THESE CLASS SELECTORS AFFECT MY WORK SECTION AND ITS COMPONENTS, ROW IS DEDICATED FOR "MY WORK" TITLE*/
 #work {
   grid-area: work; /*SPECIFIED THE NAME OF MY GRID AREA ON THE DEDICATED HTML ELEMENT SO GRID CAN RECOGNIZE THIS SPACE GOES IN SUCH AREA*/
   border-radius: var(--main-radius);
@@ -145,6 +146,7 @@ img {
   border-width: thin;
 }
 
+/* WORK 1 IMAGE/TEXT/lINKS PROPERTIES */
 .container2 {
   display: flex;
   flex-direction: row-reverse;
@@ -245,8 +247,8 @@ footer {
 }
 
 .back-to-top__image {
-  height: 75%;
-  width: 75%;
+  height: 45%;
+  width: 45%;
 }
 
 /*MY MEDIA QUERIES FOR RESPONSIVNESS*/
