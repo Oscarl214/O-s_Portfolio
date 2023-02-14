@@ -6,22 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/reset.css"/>
     <link rel="stylesheet" href="./Css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono&display=swap" rel="stylesheet"/>
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" rel="stylesheet"/>
     <title>Os Portfolio</title>
 </head>
 <body>
     <div class="container"> <!--My grid contaier class for my rows and columns that are apart of my grid layout-->
+        <div class="header">
+            <div class="header-text">
+         <h1>OSCAR LEAL</h1>
+         <br>
+         <p>Aspiring Software Developer</p>
+         <p>Austin, Tx</p>
+         </div>
     <nav>
-        <h1>O's PORTFOLIO</h1>
         <ul class="menu"> <!--My menu class selectors-->
             <a href="" ><li>About Me</li></a>
             <a href="" ><li>Work</li></a>
-            <a href="" ><li>Lifestyle</li></a>
             <a href="" ><li>Contact</li></a>
         </ul>
     </nav>
+
+    </div>
     <main> <!--My main section which is my "About Me" row where I have another container that allows me to wrap my text around my image-->
-        <h2>About Me</h2>
+        <h2 id="aboutme">About Me</h2>
         <div class="container1">
             <div class="gradshot">
               <img src="./Images/GradShot.jpeg">
@@ -30,40 +39,49 @@
                 <p>       
                     My name is Oscar Leal and I am a recent graduate from the University of Texas with a Bachelor of Science in Arts & 
                     Entertainment Technologies and a Bachelor of Science in Corporate Communications. I am pursuing a Front-End Development
-                    career. I am currently partaking in a six month Full-Stack Coding Bootcamp while also completing a UI/UX google certificate. I aim to create projects that incorporate
-                    design principles for the user experience and with capable adaptabilty. I have expertise in user experience through my design discipline during my undergrad years where I participated in creating 
+                    career. I am currently partaking in a six month Full-Stack Coding boot camp while also completing a UI/UX google certificate. I aim to create projects that incorporate
+                    design principles that shape appropriate adaptability and responsiveness for the best user experience. I have expertise in user experience through my design discipline during my undergrad years where I participated in creating 
                     user friendly practices for events and projects.  
                   </p> 
             </div>
           </div>
     </main>
         <div id="work"> <!--My Work section where I layout all my skills-->
-            <h2>Work</h2>
+            <h2 id="mywork"> My Work</h2>
         </div>
         <div id="work-1"> <!--My first project space-->
-            <h2>AR PROJECT</h2>
             <div class="container2">
                 <div class="arprojectimg">
                     <img src="./Images/WebARProejct.png" class="ARimg" alt="Project 1">
                 </div>
                 <div class="text1">
+                    <h2 id="arproject">AR Project</h2>
+                    <p>A mock Microsoft Webpage showcasing products with the option to utilize Augmented Reality to display product models in real time.</p>
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JAVASCRIPT</li>
                     </ul>
+                    <div class="links">
+                        <a href="https://rj00ce.csb.app/" class="link-text">Visit Site</a>
+                        <a href="https://github.com/Oscarl214/WebAR-Project"><img src="file:///C:/Users/lealo/Downloads/github-mark/github-mark/github-mark-white.svg" id="github" alt="Github"></a>
                 </div>
+                    </div>
             </div>
 
         </div>
         <div id="work-2"> <!--Second Project space-->
-            <h2>Project 2</h2>
+            <h2> More projects coming soon..</h2>
          </div>
-        <div id="work-3"><!--Third Project space-->
+        <!-- <div id="work-3">
             <h2>Project 3</h2>
-        </div>
+        </div> -->
     <footer>
         <h2>Contact Me</h2>
+        <div class="contact-links">
+        <a href="https://github.com/Oscarl214"><img src="file:///C:/Users/lealo/Downloads/github-mark/github-mark/github-mark-white.svg" class="contact-image1"></a>
+        <a href="https://www.linkedin.com/in/oscar-l-8371a512a/"><img src="file:///C:/Users/lealo/Downloads/linkedin-icon.svg" class="contact-image2"></a>
+    </div>
     </footer>
     </div>
 </div>
