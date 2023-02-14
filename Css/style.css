@@ -38,6 +38,10 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.header p {
+  color: rgb(245, 245, 245, 0.8);
+}
 /*THESE CLASS SELECTORS AFFECT MY NAV AND ITS COMPONENTS*/
 nav {
   grid-area: nav; /*SPECIFIED THE NAME OF MY GRID AREA ON THE DEDICATED HTML ELEMENT SO GRID CAN RECOGNIZE THIS SPACE GOES IN SUCH AREA*/
@@ -77,6 +81,10 @@ h1 {
   text-decoration: none;
 }
 
+.new-color:hover {
+  color: rgb(241, 44, 44);
+  text-decoration: underline;
+}
 /*THESE CLASS SELECTORS AFFECT MY MAIN "ABOUT ME" SECTION AND ITS COMPONENTS*/
 main {
   grid-area: main; /*SPECIFIED THE NAME OF MY GRID AREA ON THE DEDICATED HTML ELEMENT SO GRID CAN RECOGNIZE THIS SPACE GOES IN SUCH AREA*/
@@ -222,6 +230,25 @@ footer {
   height: auto;
   width: 80%;
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 0.2rem;
+  right: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.5rem;
+  width: 5.5rem;
+  /* visibility: ; */
+  transition: all 0.4s;
+}
+
+.back-to-top__image {
+  height: 75%;
+  width: 75%;
+}
+
 /*MY MEDIA QUERIES FOR RESPONSIVNESS*/
 @media only screen and (max-width: 550px) {
   .container {

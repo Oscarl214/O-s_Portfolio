@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="./Css/style.css" />
     <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="javascript" href="./javascript.js">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" rel="stylesheet"/>
     <title>Os Portfolio</title>
 </head>
 <body>
-    <div class="container"> <!--My grid contaier class for my rows and columns that are apart of my grid layout-->
-        <div class="header">
+    <div class="container" > <!--My grid contaier class for my rows and columns that are apart of my grid layout-->
+        <div class="header" id="top">
             <div class="header-text">
          <h1>OSCAR LEAL</h1>
          <br>
@@ -22,9 +23,9 @@
          </div>
     <nav>
         <ul class="menu"> <!--My menu class selectors-->
-            <a href="" ><li>About Me</li></a>
-            <a href="" ><li>Work</li></a>
-            <a href="" ><li>Contact</li></a>
+            <a href="#aboutme" class="new-color"><li>About Me</li></a>
+            <a href="#mywork" class="new-color"><li>Work</li></a>
+            <a href="#contact" class="new-color"><li>Contact</li></a>
         </ul>
     </nav>
 
@@ -33,12 +34,12 @@
         <h2 id="aboutme">About Me</h2>
         <div class="container1">
             <div class="gradshot">
-              <img src="./Images/GradShot.jpeg">
+              <img src="./Images/GradShot.jpeg" alt="grad photo">
             </div>
             <div class="text">
                 <p>       
                     My name is Oscar Leal and I am a recent graduate from the University of Texas with a Bachelor of Science in Arts & 
-                    Entertainment Technologies and a Bachelor of Science in Corporate Communications. I am pursuing a Front-End Development
+                    Entertainment Technologies and a Bachelor of Science in Corporate Communications. I am pursuing a Web Development
                     career. I am currently partaking in a six month Full-Stack Coding boot camp while also completing a UI/UX google certificate. I aim to create projects that incorporate
                     design principles that shape appropriate adaptability and responsiveness for the best user experience. I have expertise in user experience through my design discipline during my undergrad years where I participated in creating 
                     user friendly practices for events and projects.  
@@ -77,10 +78,13 @@
             <h2>Project 3</h2>
         </div> -->
     <footer>
-        <h2>Contact Me</h2>
+        <h2 id="contact">Contact Me</h2>
         <div class="contact-links">
-        <a href="https://github.com/Oscarl214"><img src="file:///C:/Users/lealo/Downloads/github-mark/github-mark/github-mark-white.svg" class="contact-image1"></a>
-        <a href="https://www.linkedin.com/in/oscar-l-8371a512a/"><img src="file:///C:/Users/lealo/Downloads/linkedin-icon.svg" class="contact-image2"></a>
+        <a href="https://github.com/Oscarl214"><img src="file:///C:/Users/lealo/Downloads/github-mark/github-mark/github-mark-white.svg" class="contact-image1" alt="github logo"></a>
+        <a href="https://www.linkedin.com/in/oscar-l-8371a512a/"><img src="file:///C:/Users/lealo/Downloads/linkedin-icon.svg" class="contact-image2" alt="linkin logo"></a>
+        <a href="#top" class="back-to-top" title="Back to Top" >
+            <img src="https://cdn2.iconfinder.com/data/icons/ecommerce-3-4/65/104-512.png" alt="Back to Top" class="back-to-top__image">
+          </a>
     </div>
     </footer>
     </div>
