@@ -17,7 +17,7 @@ body {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr; /* One COLUMN SIZE "1 FRACTION" */
-  grid-template-rows: 0.2fr auto auto auto auto auto auto 0.8fr; /*FIVE ROWS WITH ONLY NAV AND FOOTER HAVING SPECIFIC SIZES*/
+  grid-template-rows: 0.2fr auto auto auto auto auto auto auto 0.8fr; /*FIVE ROWS WITH ONLY NAV AND FOOTER HAVING SPECIFIC SIZES*/
   grid-template-areas: /* LAYOUT OF MY ENTIRE WEBSITE COVERING EACH AREA OVER ONE COLUMN AND A TOTAL OF 7 ROWS*/
     "header"
     "nav"
@@ -26,6 +26,7 @@ body {
     "work-2"
     "work-3"
     "main"
+    "contact"
     "footer";
   grid-gap: 0.2rem; /*SPACE BETWEEN MY ROWS AND COLUMNS*/
 }
@@ -82,7 +83,7 @@ h1 {
   text-decoration: none;
 }
 
-.new-color:hover {
+.new-color :hover {
   color: rgb(241, 44, 44);
   text-decoration: underline;
 }
@@ -209,6 +210,32 @@ a {
   padding-top: var(--mainpadding);
 }
 
+/*THESE CLASS SELECTORS AFFECT Contact SECTION AND ITS COMPONENTS*/
+#contact {
+  grid-area: contact;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border: solid;
+  border-width: thin;
+}
+.text2 {
+  font-size: 25px;
+  line-height: 2.5rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
 /*THESE CLASS SELECTORS AFFECT MY FOOTER SECTION AND ITS COMPONENTS*/
 footer {
   grid-area: footer; /*SPECIFIED THE NAME OF MY GRID AREA ON THE DEDICATED HTML ELEMENT SO GRID CAN RECOGNIZE THIS SPACE GOES IN SUCH AREA*/
@@ -251,7 +278,7 @@ footer {
   width: 45%;
 }
 
-/*MY MEDIA QUERIES FOR RESPONSIVNESS*/
+/*MY MEDIA QUERIES FOR RESPONSIVENESS*/
 @media only screen and (max-width: 550px) {
   .container {
     grid-template-columns: 1fr;
@@ -264,6 +291,7 @@ footer {
       "work-1"
       "work-2"
       "work-3"
+      "contact"
       "footer";
   }
   .container1 {
@@ -273,33 +301,3 @@ footer {
     justify-content: center;
   }
 }
-
-/* pre{
-    background: #002349;
-    color: beige;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Space Mono', monospace;
-    /* border-radius: 15px; 
-} */
-
-/* #gym{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 100%;
-} */
-/* #code{
-    height: 800px;
-    width:300px;
-} */
-
-/*
-#aboutme{
-    line-height: 1.6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-} */
