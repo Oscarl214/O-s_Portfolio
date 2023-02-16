@@ -32,3 +32,7 @@
 -In Ipad-Mobile View:
 
 ![](https://github.com/Oscarl214/O-s_Portfolio/blob/main/Images/preview.gif)
+
+## Deployed Link
+
+https://oscarl214.github.io/O-s_Portfolio/
