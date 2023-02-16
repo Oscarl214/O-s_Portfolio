@@ -29,5 +29,5 @@
 -Links to my LinkedIn and my GitHub. 
 
 ## Preview
-
+- In Ipad-mobile View
 ![](https://github.com/Oscarl214/O-s_Portfolio/blob/main/Images/preview.gif)
