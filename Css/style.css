@@ -278,6 +278,20 @@ footer {
   width: 45%;
 }
 
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  /* margin: 5px 2px; */
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
 /*MY MEDIA QUERIES FOR RESPONSIVENESS*/
 @media only screen and (max-width: 550px) {
   .container {
