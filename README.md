@@ -27,3 +27,7 @@
 ### Footer
 
 -Links to my LinkedIn and my GitHub. 
+
+## Preview
+
+![](https://github.com/Oscarl214/O-s_Portfolio/blob/main/Images/preview.gif)
