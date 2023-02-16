@@ -218,7 +218,7 @@ a {
 .contact {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   border: solid;
   border-width: thin;
 }
@@ -253,11 +253,11 @@ footer {
 
 .contact-image1 {
   height: auto;
-  width: 50%;
+  width: 25%;
 }
 .contact-image2 {
   height: auto;
-  width: 80%;
+  width: 5%;
 }
 
 .back-to-top {
@@ -276,20 +276,6 @@ footer {
 .back-to-top__image {
   height: 45%;
   width: 45%;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 20px;
-  width: 10px;
-  text-align: center;
-  text-decoration: none;
-  /* margin: 5px 2px; */
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
 }
 
 /*MY MEDIA QUERIES FOR RESPONSIVENESS*/
