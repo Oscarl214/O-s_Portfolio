@@ -166,6 +166,9 @@ ul {
   list-style-type: disc;
 }
 
+#arproject {
+  font-size: 30px;
+}
 .links {
   display: flex;
   flex-direction: row;
@@ -242,6 +245,9 @@ footer {
   padding-top: var(--mainpadding);
 }
 
+#intouch {
+  font-size: 30px;
+}
 .contact-links {
   display: flex;
   flex-direction: row;
