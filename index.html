@@ -8,9 +8,18 @@
     <link rel="stylesheet" href="./Css/style.css" />
     <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="javascript" href="./javascript.js">
+     
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" rel="stylesheet"/>
     <title>Os Portfolio</title>
+    <style>
+        .hidden{
+            opacity: 0;
+        }
+        .visible{
+            opacity:1;
+            transition: opacity 1s ease-out;
+        }
+    </style>
 </head>
 <body>
     <div class="container" > <!--My grid container class for my rows and columns that are apart of my grid layout-->
@@ -93,8 +102,8 @@
         </div>
     <footer>
         <div class="contact-links"> <!--My contact links div -->
-        <a href="https://github.com/Oscarl214" id="medialinks"><img src="./Images/github-svgrepo-com (2).png" class="contact-image1" alt="github logo"></a>
-    <a href="https://www.linkedin.com/in/oscar-l-8371a512a/" id="medialinks"><img src="./Images/linkedin-svgrepo-com (1).png" class="contact-image2" alt="linkin logo"></a>
+        <a href="https://github.com/Oscarl214" id="medialinks" ><img src="./Images/github-svgrepo-com (2).png" class="contact-image1" alt="github logo"></a>
+    <a href="https://www.linkedin.com/in/oscar-l-8371a512a/" id="medialinks" ><img src="./Images/linkedin-svgrepo-com (1).png" class="contact-image2" alt="linkin logo" ></a>
     <a href="#top" class="back-to-top" title="Back to Top" > <!--My scroll to top button image that has path to my header once clicked-->
         <img src="https://cdn2.iconfinder.com/data/icons/ecommerce-3-4/65/104-512.png" alt="Back to Top" class="back-to-top__image">
       </a>
@@ -102,5 +111,6 @@
     </footer>
     </div>
 </div>
+<script src="./javascript.js"></script>
 </body>
 </html>
