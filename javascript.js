@@ -2,14 +2,6 @@ let quoteSpace = $("#fetchQuote");
 let quoteApiKey = "VPLjgJhecNff7vCheYKrxw==4zgtmN3GTd8nlHDM";
 let author = $("#author");
 
-function doStuff(callback) {
-  callback();
-}
-
-doStuff(function () {
-  document.body.className = "visible";
-});
-
 let quoteAPI = function () {
   var category = "knowledge";
   var quoteURL = "https://api.api-ninjas.com/v1/quotes?category=" + category;
@@ -36,3 +28,11 @@ let quoteAPI = function () {
 console.log(quoteAPI);
 
 quoteAPI();
+
+function doStuff(callback) {
+  callback();
+}
+
+doStuff(function () {
+  document.body.className = "visible";
+});
