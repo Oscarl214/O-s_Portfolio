@@ -172,6 +172,13 @@ ul {
 #arproject {
   font-size: 30px;
 }
+#weatherApp {
+  font-size: 30px;
+}
+
+#birdProject {
+  font-size: 30px;
+}
 .links {
   display: flex;
   flex-direction: row;
@@ -179,12 +186,12 @@ ul {
   margin-top: 20px;
 }
 .text1 {
-  margin-right: 10px;
+  margin: 4rem;
   font-size: 25px;
   line-height: 2.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+
   flex-wrap: wrap;
 }
 
@@ -209,7 +216,6 @@ a {
 
 /*THESE CLASS SELECTORS AFFECT MY WORK-3 SECTION AND ITS COMPONENTS*/
 #work-3 {
-  background: lime;
   grid-area: work-3; /*SPECIFIED THE NAME OF MY GRID AREA ON THE DEDICATED HTML ELEMENT SO GRID CAN RECOGNIZE THIS SPACE GOES IN SUCH AREA*/
   border-radius: var(main-radius);
   padding-top: var(--mainpadding);
@@ -228,14 +234,23 @@ a {
   border-width: thin;
 }
 .text2 {
+  margin: 4rem;
   font-size: 25px;
   line-height: 2.5rem;
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
+.text3 {
+  margin: 4rem;
+  font-size: 25px;
+  line-height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 .btn {
   text-decoration: underline;
   color: whitesmoke;
