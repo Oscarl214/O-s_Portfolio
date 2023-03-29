@@ -3,7 +3,7 @@
 ## Features
 
 - Clean, Simple and Modern UI Design.
-- Built with only HTML, and CSS 🔨.
+- Built with only HTML, CSS, & a bit of JavaScript🔨.
 - Utilized a one column and nine row grid layout.
 
 ### Header
